@@ -1,0 +1,123 @@
+/* App.css */
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 50px;
+}
+
+.header img {
+  max-height: 50px;
+}
+
+.cart {
+  font-size: 24px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+
+}
+
+
+.product-list {
+  display: flex;
+  margin: 20px;
+  margin: 100px 0px 100px 200px ;
+}
+
+.brands-sidebar {
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  top: 90px;
+  left: 0px;
+  background-color: rgb(51, 51, 51, 0.2);
+}
+
+.brands-sidebar h2 {
+  margin-bottom: 10px;
+}
+
+.brands-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.brands-sidebar li {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.products-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  padding: 20px;
+  text-align: left;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  
+  border: 1px solid #ccc;
+}
+
+.product-card h3 {
+  font-size: 15px;
+}
+
+.product-card p {
+  font-size: 15px;
+}
+
+/* Добавим стили для активного бренда в боковой панели */
+.brands-sidebar li.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.main-content {
+  display: flex;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.footer {
+  
+}
