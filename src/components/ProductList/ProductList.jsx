@@ -1,7 +1,8 @@
 // ProductList.js
 import React, { useEffect, useState } from 'react';
-import ProductCard from './ProductCard';
-import productsData from '../Components/assets/products.json';
+import ProductCard from '../ProductCard/ProductCard';
+import productsData from './products.json';
+
 
 const ProductList = ({ selectedBrands }) => {
   const [filteredProducts, setFilteredProducts] = useState([]);

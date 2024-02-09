@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import ProductList from './Components/ProductList';
-import BrandsSideBar from './Components/BrandsSideBar';
-import brandsData from './Components/assets/brands.json';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import ProductList from './components/ProductList/ProductList';
+import BrandsSideBar from './components/BrandsSideBar/BrandsSideBar';
+import brandsData from './components/ProductList/brands.json';
 
 import './App.css';
+import './components/Header/Header.css';
+import './components/Footer/Footer.css';
+import './components/ProductList/ProductList.css';
+import './components/ProductCard/ProductCard.css';
+import './components/BrandsSideBar/BrandsSideBar.css';
+import './components/Cart/Cart.css';
 
 const App = () => {
   const [selectedProducts, setSelectedProducts] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
